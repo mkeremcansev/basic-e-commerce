@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Boxed layout width*/
+/**
+ * Table Of Content
+ *
+ * 	1. Colors
+ *	2. Typography
+ *	3. Forms
+ *	4. Tabs
+ */
+/*******************
+ Gradiant mixin
+*******************/
+.email-app {
+  position: relative; }
+  .email-app .left-part {
+    height: calc(100vh - 64px);
+    border-right: 1px solid rgba(120, 130, 140, 0.13);
+    width: 260px;
+    overflow: auto;
+    position: fixed; }
+    .email-app .left-part .list-group .list-group-item a {
+      padding: 12px 15px;
+      display: block;
+      color: #9098ac; }
+      .email-app .left-part .list-group .list-group-item a i {
+        font-size: 18px;
+        vertical-align: middle;
+        margin-right: 5px; }
+      .email-app .left-part .list-group .list-group-item a:hover, .email-app .left-part .list-group .list-group-item a.active {
+        background: rgba(0, 0, 0, 0.03); }
+  .email-app .right-part {
+    width: calc(100% - 260px);
+    min-height: calc(100vh - 64px);
+    overflow: auto;
+    background: #fff;
+    float: right; }
+    .email-app .right-part .email-table {
+      table-layout: fixed; }
+      .email-app .right-part .email-table td {
+        padding: 15px 15px 15px 0; }
+        .email-app .right-part .email-table td:first-child {
+          padding: 15px; }
+      .email-app .right-part .email-table tr:hover {
+        background: #f8f9fa; }
+      .email-app .right-part .email-table a {
+        color: #9098ac; }
+      .email-app .right-part .email-table h6 {
+        font-size: 15px; }
+      .email-app .right-part .email-table tr.selected {
+        background: #fff8e1; }
+      .email-app .right-part .email-table [type="checkbox"] + span:not(.lever) {
+        vertical-align: middle; }
+      .email-app .right-part .email-table .max-texts,
+      .email-app .right-part .email-table .user-name h6 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .email-app .right-part .email-table .chb {
+        width: 50px; }
+      .email-app .right-part .email-table .time {
+        width: 80px;
+        text-align: right; }
+      .email-app .right-part .email-table .starred,
+      .email-app .right-part .email-table .clip {
+        width: 25px; }
+      .email-app .right-part .email-table .user-image {
+        width: 40px; }
+      .email-app .right-part .email-table .user-name {
+        width: 130px; }
+      .email-app .right-part .email-table .unread h6,
+      .email-app .right-part .email-table .unread span {
+        font-weight: 700; }
+
+@media (max-width: 767px) {
+  .email-table {
+    min-width: 480px; }
+  .email-app .left-part {
+    left: -260px;
+    background: #fff;
+    z-index: 10;
+    transition: 0.1s ease-in; }
+    .email-app .left-part.show-panel {
+      left: 0px; }
+  .email-app .right-part {
+    width: 100%; } }

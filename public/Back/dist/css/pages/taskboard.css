@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Boxed layout width*/
+/**
+ * Table Of Content
+ *
+ * 	1. Colors
+ *	2. Typography
+ *	3. Forms
+ *	4. Tabs
+ */
+/*******************
+ Gradiant mixin
+*******************/
+.lobilists .lobilist {
+  box-shadow: none; }
+
+.lobilists .lobilist.lobilist-primary {
+  border-color: rgba(120, 130, 140, 0.13); }
+  .lobilists .lobilist.lobilist-primary .lobilist-header, .lobilists .lobilist.lobilist-primary .lobilist-footer, .lobilists .lobilist.lobilist-primary .lobilist-form-footer {
+    border-color: #5e72e4;
+    background-color: #5e72e4; }
+
+.lobilists .lobilist.lobilist-danger {
+  border-color: rgba(120, 130, 140, 0.13); }
+  .lobilists .lobilist.lobilist-danger .lobilist-header, .lobilists .lobilist.lobilist-danger .lobilist-footer, .lobilists .lobilist.lobilist-danger .lobilist-form-footer {
+    border-color: #f5365c;
+    background-color: #f5365c; }
+
+.lobilists .lobilist.lobilist-info {
+  border-color: rgba(120, 130, 140, 0.13); }
+  .lobilists .lobilist.lobilist-info .lobilist-header, .lobilists .lobilist.lobilist-info .lobilist-footer, .lobilists .lobilist.lobilist-info .lobilist-form-footer {
+    border-color: #288fee;
+    background-color: #288fee; }
+
+.lobilists .lobilist.lobilist-success {
+  border-color: rgba(120, 130, 140, 0.13); }
+  .lobilists .lobilist.lobilist-success .lobilist-header, .lobilists .lobilist.lobilist-success .lobilist-footer {
+    border-color: #2dce89;
+    background-color: #2dce89; }
+
+.lobilists .lobilist-footer, .lobilists .lobilist-form-footer {
+  border-color: rgba(120, 130, 140, 0.13) !important;
+  background: rgba(0, 0, 0, 0.02) !important; }
+
+.lobilists .btn:hover, .lobilists .btn-large:hover, .lobilists .btn-small:hover {
+  background: rgba(255, 255, 255, 0.5); }
+
+.lobilists .btn-show-form {
+  color: #414755 !important; }
+
+.lobilists.single-line {
+  height: 500px; }
+
+.lobilist, .lobilists {
+  position: relative; }
+
+.lobilists [type="checkbox"]:not(:checked), .lobilists [type="checkbox"]:checked {
+  opacity: 1;
+  position: relative; }
+
+.lobilists .lobilist-item {
+  margin-bottom: 16px;
+  padding-top: 5px; }
+
+.lobilists .lobilist-item-title {
+  color: #414755; }
+
+.lobilists .lobilist-item-description {
+  font-style: normal;
+  font-size: 13px; }
+
+.lobilists .lobilist-check {
+  top: 10px; }
+
+.lobilists .lobilist-item-duedate {
+  position: relative;
+  font-size: 12px;
+  left: 0px; }
+
+.lobilists .lobilist-actions {
+  top: 0px; }
+
+.lobilist-actions .btn {
+  background: transparent;
+  height: 40px;
+  line-height: 45ppx;
+  padding: 0 10px; }
+
+.lobilist-actions .btn:hover {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.03); }
+
+.lobilist-actions .btn i {
+  font-size: 15px;
+  vertical-align: middle; }
+
+.show-color {
+  position: relative; }
+
+.show-color .dd-box {
+  display: none;
+  height: 70px;
+  width: 100px;
+  box-sizing: content-box;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  right: 0px;
+  z-index: 10;
+  background: white;
+  border: 1px solid #dadada;
+  padding: 10px;
+  position: absolute; }
+
+.show-color:hover .dd-box {
+  display: block; }

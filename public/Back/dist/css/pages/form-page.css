@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Boxed layout width*/
+/**
+ * Table Of Content
+ *
+ * 	1. Colors
+ *	2. Typography
+ *	3. Forms
+ *	4. Tabs
+ */
+/*******************
+ Gradiant mixin
+*******************/
+.h-form .form-body .h-form-label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem; }
+  .h-form .form-body .h-form-label label {
+    font-size: 16px; }
+
+.h-form .form-action {
+  text-align: right; }
+
+.r-separator .form-body .row {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+  .r-separator .form-body .row:last-child {
+    border-bottom: none; }
+
+.b-form .form-body .row {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+  .b-form .form-body .row:last-child {
+    border-bottom: none; }
+  .b-form .form-body .row .input-field {
+    border-left: 1px solid rgba(120, 130, 140, 0.13);
+    margin: 0;
+    padding: 1rem; }
+
+.striped-rows .form-body .row:nth-child(odd) {
+  background-color: #f8f9fa; }
+
+.striped-lables .form-body .row:nth-child(odd) {
+  background-color: #f8f9fa; }
+  .striped-lables .form-body .row:nth-child(odd) .input-field {
+    background-color: #fff; }

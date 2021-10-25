@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Boxed layout width*/
+/**
+ * Table Of Content
+ *
+ * 	1. Colors
+ *	2. Typography
+ *	3. Forms
+ *	4. Tabs
+ */
+/*******************
+ Gradiant mixin
+*******************/
+/*******************
+ sales
+*******************/
+#sales {
+  position: relative;
+  height: 270px; }
+  #sales .ct-series-a .ct-area {
+    fill-opacity: 0.5;
+    fill: url(#gradient); }
+  #sales .ct-series-a .ct-line, #sales .ct-series-a .ct-point {
+    stroke: #288fee;
+    stroke-width: 0px; }
+  #sales .ct-series-b .ct-area {
+    fill-opacity: 0.2;
+    fill: #288fee; }
+  #sales .ct-series-b .ct-line, #sales .ct-series-b .ct-point {
+    stroke: #ced4da;
+    stroke-width: 0px; }
+  #sales .ct-series-a .ct-point, #sales .ct-series-b .ct-point {
+    stroke-width: 5px; }
+  #sales .ct-grid {
+    stroke-width: 0.5px; }
+
+.news-slide .carousel-item {
+  min-height: 530px !important;
+  background: -moz-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1) 56%, rgba(0, 0, 0, 0.8) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.1) 56%, rgba(0, 0, 0, 0.8) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.1) 56%, rgba(0, 0, 0, 0.8) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.news-slide .carousel-caption {
+  text-align: left;
+  left: 25px;
+  right: 25px;
+  bottom: 60px;
+  position: absolute; }

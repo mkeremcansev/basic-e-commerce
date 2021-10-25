@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Boxed layout width*/
+/**
+ * Table Of Content
+ *
+ * 	1. Colors
+ *	2. Typography
+ *	3. Forms
+ *	4. Tabs
+ */
+/*******************
+ Gradiant mixin
+*******************/
+.ct-series-a .ct-bar {
+  stroke: #5e72e4; }
+
+#chart-earnings.c3 path {
+  opacity: 1 !important; }

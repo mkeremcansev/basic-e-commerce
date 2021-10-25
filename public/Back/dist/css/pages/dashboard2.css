@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
+/*Boxed layout width*/
+/**
+ * Table Of Content
+ *
+ * 	1. Colors
+ *	2. Typography
+ *	3. Forms
+ *	4. Tabs
+ */
+/*******************
+ Gradiant mixin
+*******************/
+.overview {
+  height: 280px;
+  -webkit-filter: drop-shadow(0 7px 3px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 7px 3px rgba(0, 0, 0, 0.3)); }
+  .overview .ct-series-b .ct-area {
+    fill-opacity: 0.0;
+    fill: url(#gradient); }
+  .overview .ct-series-b .ct-line,
+  .overview .ct-series-b .ct-point {
+    stroke: #2dce89;
+    stroke-width: 2px; }
+  .overview .ct-series-a .ct-area {
+    fill: #288fee;
+    fill-opacity: 0.05;
+    fill: url(#gradient); }
+  .overview .ct-series-a .ct-line,
+  .overview .ct-series-a .ct-point {
+    stroke: #288fee;
+    stroke-width: 2px; }
+  .overview .ct-series-a .ct-point,
+  .overview .ct-series-b .ct-point {
+    stroke-width: 6px; }

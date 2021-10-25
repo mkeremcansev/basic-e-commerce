@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Materialise Demo</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    html,
+    body,
+    .block {
+        height: 100%;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    footer {
+        padding-left: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div id="blue" class="block blue">
+            <nav class="pushpin-demo-nav" data-target="blue">
+                <div class="nav-wrapper light-blue">
+                    <div class="container">
+                        <a href="#" class="brand-logo">Blue</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#!">Blue Link 1</a></li>
+                            <li><a href="#!">Blue Link 2</a></li>
+                            <li><a href="#!">Blue Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="red" class="block red lighten-1">
+            <nav class="pushpin-demo-nav" data-target="red">
+                <div class="nav-wrapper red">
+                    <div class="container">
+                        <a href="#" class="brand-logo">Red</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#!">Red Link 1</a></li>
+                            <li><a href="#!">Red Link 2</a></li>
+                            <li><a href="#!">Red Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="green" class="block green lighten-1">
+            <nav class="pushpin-demo-nav" data-target="green">
+                <div class="nav-wrapper green">
+                    <div class="container">
+                        <a href="#" class="brand-logo">Green</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#!">Green Link 1</a></li>
+                            <li><a href="#!">Green Link 2</a></li>
+                            <li><a href="#!">Green Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../../assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script>
+    // ============================================================== 
+    // pushpin
+    // ============================================================== 
+    if ($('.pushpin-demo-nav').length) {
+        $('.pushpin-demo-nav').each(function() {
+            var $this = $(this);
+            var $target = $('#' + $(this).attr('data-target'));
+            $this.pushpin({
+                top: $target.offset().top,
+                bottom: $target.offset().top + $target.outerHeight() - $this.height()
+            });
+        });
+    }
+    </script>
+</body>
+
+</html>
